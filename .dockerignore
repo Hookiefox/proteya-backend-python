@@ -1,0 +1,97 @@
+# -----------------------
+# Git
+# -----------------------
+.git
+.gitignore
+.gitmodules
+.gitattributes
+
+# -----------------------
+# Python
+# -----------------------
+# Виртуальные среды
+venv/
+env/
+envs/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# -----------------------
+# Dependencies
+# -----------------------
+# Установленные пакеты (на случай, если копируете вручную)
+build/
+dist/
+*.egg-info/
+
+# -----------------------
+# Environment variables
+# -----------------------
+.env
+*.env
+.env.local
+.env.development
+.env.production
+
+# -----------------------
+# Databases
+# -----------------------
+# Ваши файлы БД (если хранятся в проекте)
+notes.db
+*.db
+/data/*.db
+/data/database.db
+
+# -----------------------
+# IDE / Редакторы
+# -----------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------
+# Логи и временные файлы
+# -----------------------
+logs/
+*.log
+tmp/
+temp/
+
+# -----------------------
+# Docker
+# -----------------------
+docker-compose.override.yml
+.dockerignore
+
+# -----------------------
+# Node.js / Frontend (если есть)
+# -----------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+out/
+.next/
+.nuxt/

@@ -1,0 +1,38 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  # Основной бэкенд (FastAPI)
+  backend:
+    image: proteya:latest
+    container_name: proteya-backend
+    user: "1000:1000"  # appuser (если UID совпадает с хостом), или уберите, если не нужно
+    volumes:
+      - data_volume:/data
+      - ./static:/app/static
+    environment:
+      - DATA_DIR=/data
+    expose:
+      - "8000"
+      - "8765"
+    restart: unless-stopped
+
+  # Nginx — обратный прокси с HTTPS
+  nginx:
+    image: nginx:alpine
+    container_name: proteya-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/ssl/private
+      - ./static:/usr/share/nginx/html/static
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+# Именованные volumes
+volumes:
+  data_volume:
+    driver: local

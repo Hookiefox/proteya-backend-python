@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+aiosqlite
+Pillow
+python-multipart
+passlib[bcrypt]
+python-jose[cryptography]
+bcrypt
+websockets
+aiortc

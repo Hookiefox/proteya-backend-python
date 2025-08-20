@@ -1,0 +1,117 @@
+{
+  "tags": {
+    "tag_1": {
+      "id": "tag_1",
+      "name": "Тег",
+      "parent_id": null,
+      "children": [
+        "tag_3"
+      ],
+      "icon": null
+    },
+    "tag_3": {
+      "id": "tag_3",
+      "name": "Дочерний тег",
+      "parent_id": "tag_1",
+      "children": [
+        "tag_4",
+        "tag_5"
+      ],
+      "icon": null
+    },
+    "tag_4": {
+      "id": "tag_4",
+      "name": "ппппппппп",
+      "parent_id": "tag_3",
+      "children": [],
+      "icon": null
+    },
+    "tag_5": {
+      "id": "tag_5",
+      "name": "вап",
+      "parent_id": "tag_3",
+      "children": [],
+      "icon": null
+    },
+    "tag_2": {
+      "id": "tag_2",
+      "name": "sdf",
+      "parent_id": null,
+      "children": [],
+      "icon": null
+    },
+    "tag_6": {
+      "id": "tag_6",
+      "name": "ываыва",
+      "parent_id": null,
+      "children": [
+        "tag_10"
+      ],
+      "icon": null
+    },
+    "tag_7": {
+      "id": "tag_7",
+      "name": "ываыва",
+      "parent_id": null,
+      "children": [
+        "tag_13"
+      ],
+      "icon": null
+    },
+    "tag_8": {
+      "id": "tag_8",
+      "name": "ываыва",
+      "parent_id": null,
+      "children": [
+        "tag_11"
+      ],
+      "icon": null
+    },
+    "tag_9": {
+      "id": "tag_9",
+      "name": "ываыва",
+      "parent_id": null,
+      "children": [],
+      "icon": null
+    },
+    "tag_10": {
+      "id": "tag_10",
+      "name": "выаыва",
+      "parent_id": "tag_6",
+      "children": [],
+      "icon": null
+    },
+    "tag_11": {
+      "id": "tag_11",
+      "name": "выапва",
+      "parent_id": "tag_8",
+      "children": [
+        "tag_12"
+      ],
+      "icon": null
+    },
+    "tag_12": {
+      "id": "tag_12",
+      "name": "аавп",
+      "parent_id": "tag_11",
+      "children": [],
+      "icon": null
+    },
+    "tag_13": {
+      "id": "tag_13",
+      "name": "ывапывап",
+      "parent_id": "tag_7",
+      "children": [
+        "tag_14"
+      ],
+      "icon": null
+    },
+    "tag_14": {
+      "id": "tag_14",
+      "name": "ывапывап",
+      "parent_id": "tag_13",
+      "children": [],
+      "icon": null
+    }
+  }
+}
